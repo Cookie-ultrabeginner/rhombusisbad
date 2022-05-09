@@ -1,0 +1,26 @@
+from random import choice
+from string import ascii_uppercase
+print ("python")
+
+space = " "
+len_of_space = 20
+len_of_char1 = 1
+
+for i in range (0,15):
+    print ((space*(len_of_space*2)),end="")
+    for m in range (1,(len_of_char1*4)):
+        char1 = (''.join(choice(ascii_uppercase)))
+        print (char1,end="")
+    len_of_char1+=1
+    len_of_space-=1
+    print (" ")
+    if (len_of_char1*10)>=15*10:
+       break
+for i in range (0,15):
+    print ((space*(len_of_space*2)),end="")
+    for m in range (1,(len_of_char1*4)):
+        char1 = (''.join(choice(ascii_uppercase)))
+        print (char1,end="")
+    len_of_char1-=1
+    len_of_space+=1
+    print (" ")
